@@ -1,0 +1,23 @@
+tek_up_etudiant_homepage:
+    path:     /
+    defaults: { _controller: TekUpEtudiantBundle:Default:index }
+
+tekup_etudiant:
+    path:     /Etudiant
+    defaults: { _controller: TekUpEtudiantBundle\Controller\EtudiantController::indexAction }
+
+affichage_etudiant:
+    path:     /affichage_Etudiant/{id}
+    defaults: { _controller: TekUpEtudiantBundle\Controller\EtudiantController::affichageAction }
+
+voir_etudiant:
+    path:     /Etudiant/{name}
+    defaults: { _controller: TekUpEtudiantBundle\Controller\EtudiantController::voirAction }
+
+list:
+    path:     /list
+    defaults: { _controller: TekUpEtudiantBundle\Controller\EtudiantController::listAction }
+
+Affectation:
+    path: /affect
+    defaults: { _controller: TekUpEtudiantBundle\Controller\EtudiantController::affecterAction }
